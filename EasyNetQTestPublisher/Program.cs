@@ -17,7 +17,9 @@ namespace ConsoleApplication1
 
             var queue = bus.QueueDeclare("emailsubscriptionAdvanced");
 
-            bus.Bind(bus.ExchangeDeclare("myAdvancedExchange", ExchangeType.Topic), queue, "#");
+            var exchange = bus.ExchangeDeclare("myAdvancedExchange", ExchangeType.Direct);
+
+            bus.Bind(exchange, queue, "#");
 
             for (int i = 0; i < 10; i++)
             {
@@ -31,8 +33,7 @@ namespace ConsoleApplication1
                         EmailAddress = i + "bill@home.com"
                     });
 
-                    var exch = bus.ExchangeDeclare("myAdvancedExchange", ExchangeType.Topic);
-                    publishChannel.Publish<ENQMessage>(exch, "#", message);
+                    publishChannel.Publish<ENQMessage>(exchange, "#", message);
                 }
             }
 
