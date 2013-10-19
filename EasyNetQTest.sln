@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQTestPublisher", "EasyNetQTestPublisher\EasyNetQTestPublisher.csproj", "{D5A4E02F-EE11-4872-B823-802A94CAD39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQTestSubscriber", "EasyNetQTestSubscriber\EasyNetQTestSubscriber.csproj", "{94A26ED0-4CFC-4874-8583-911A60E48C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENQMessageLib", "ENQMessageLib\ENQMessageLib.csproj", "{350E057F-91A7-4124-8466-C6AA32CC36E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5A4E02F-EE11-4872-B823-802A94CAD39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A4E02F-EE11-4872-B823-802A94CAD39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A4E02F-EE11-4872-B823-802A94CAD39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A4E02F-EE11-4872-B823-802A94CAD39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A26ED0-4CFC-4874-8583-911A60E48C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A26ED0-4CFC-4874-8583-911A60E48C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A26ED0-4CFC-4874-8583-911A60E48C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A26ED0-4CFC-4874-8583-911A60E48C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350E057F-91A7-4124-8466-C6AA32CC36E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350E057F-91A7-4124-8466-C6AA32CC36E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350E057F-91A7-4124-8466-C6AA32CC36E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350E057F-91A7-4124-8466-C6AA32CC36E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
